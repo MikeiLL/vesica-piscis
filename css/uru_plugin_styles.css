@@ -1,0 +1,41 @@
+/*!
+ * 
+ * 
+ * 
+ */
+ 
+     .ui-datepicker-header { 
+        position:relative; 
+        padding:.2em 0; 
+        border:0px;
+        font-weight: bold;
+        width: 100%;
+        padding: 4px 0;
+        background-color: @body-bg;
+        color: #000;
+    }
+    
+    .mz_mbo_signup label {
+    	float: left;
+    }
+    .mz_mbo_signup input {
+    	float: right;
+    }
+    .mz_mbo_signup br {
+    	clear: both;
+    }
+    .mz_mbo_signup {
+    	max-width: 340px;
+    }
+    .mz_mbo_login {
+    	max-width: 340px;
+    }
+    .mz_mbo_signup button, .mz_mbo_login button, .mz_mbo_login btn.btwn_mz_mbo_button {
+    	float: right;
+    	margin-bottom: .5em;
+    	margin-top: .5em;
+    }
+    .mz_mbo_login br.btwn_mz_mbo_buttons {
+    	clear: both;
+    }
+    	
