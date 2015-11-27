@@ -3214,6 +3214,17 @@ mz_mindbody_events_header {margin-bottom:.1em;}
 	float: right; margin-top: 24px; margin-left: .5em; border: 2px solid rgba(125, 125, 153, 0.7); 
 	}
 
+/**
+* 10.2 - MZ MBO Staff Display
+* ----------------------------------------------------------------------------
+*/
+
+.mz_modal_staff_image_body {
+	float: left;
+	margin: 1rem;
+}
+
+
 @media (max-width: 767px) {
 /*
 Template Name: Page Of Posts Two Columns
