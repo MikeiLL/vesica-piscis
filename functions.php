@@ -1,5 +1,8 @@
 <?php
 
+define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyten_header_image_width', 1600 ) );
+define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentyten_header_image_height', 230 ) );
+
 function add_vesica_piscis_styles() {
     wp_enqueue_style( 'twenty-thirteen-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'vesica-piscis-style',
