@@ -113,18 +113,18 @@ textarea {
 
 
 body {
-	color: #141412;
+	color: hsla(60, 5%, 7%, 1); /* black */
 	line-height: 1.5;
 	margin: 0;
 }
 
 a {
-	color: #ca3c08;
+	color: hsla(16, 92%, 41%, 1); /* dark orange */
 	text-decoration: none;
 }
 
 a:visited {
-	color: #ac0404;
+	color: hsla(0, 95%, 35%, 1); /* Red */
 }
 
 a:focus {
@@ -133,7 +133,7 @@ a:focus {
 
 a:active,
 a:hover {
-	color: #ea9629;
+	color: hsla(34, 82%, 54%, 1); /* Golden */
 	outline: 0;
 }
 
@@ -418,7 +418,7 @@ textarea {
 }
 
 table {
-	border-bottom: 1px solid #ededed;
+	border-bottom: 1px solid hsla(0, 0%, 93%, 1); /* White-grey */
 	border-collapse: collapse;
 	border-spacing: 0;
 	font-size: 14px;
@@ -445,7 +445,7 @@ th {
 }
 
 td {
-	border-top: 1px solid #ededed;
+	border-top: 1px solid hsla(0, 0%, 93%, 1); /* White-grey */
 	padding: 6px 10px 6px 0;
 }
 
@@ -454,7 +454,7 @@ del {
 }
 
 ins {
-	background: #fff9c0;
+	background: hsla(54, 100%, 88%, 1); /* baby chik yellow */
 	text-decoration: none;
 }
 
@@ -552,7 +552,7 @@ hr {
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
-	color: #21759b;
+	color: hsla(199, 65%, 37%, 1); /* Soul Blue */
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
@@ -571,19 +571,19 @@ hr {
 button,
 input,
 textarea {
-	border: 2px solid #d4d0ba;
+	border: 2px solid hsla(51, 23%, 78%, 1); /* Light Pita Bread */
 	font-family: inherit;
 	padding: 5px;
 }
 
 input,
 textarea {
-	color: #141412;
+	color: hsla(60, 5%, 7%, 1); /* Black Velvet */
 }
 
 input:focus,
 textarea:focus {
-	border: 2px solid #c3c0ab;
+	border: 2px solid hsla(53, 17%, 72%, 1); /* Raw Tahini */
 	outline: 0;
 }
 
@@ -592,11 +592,11 @@ button,
 input[type="submit"],
 input[type="button"],
 input[type="reset"] {
-	background: #68727e; /* Old browsers */
-	background: -webkit-linear-gradient(top, #68727e 0%, #415975 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #68727e 0%, #415975 100%); /* W3C */
+	background: hsla(213, 50%, 45%, 1) ; /* Old browsers */
+	background: -webkit-linear-gradient(top, hsla(213, 50%, 45%, 1)  0%, hsla(212, 29%, 46%, 1)   100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, hsla(213, 50%, 45%, 1)  0%, hsla(212, 29%, 46%, 1)   100%); /* W3C */
 	border: none;
-	border-bottom: 3px solid #415975;
+	border-bottom: 3px solid hsla(212, 29%, 46%, 1)  ;
 	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
@@ -612,9 +612,9 @@ input[type="reset"]:hover,
 input[type="submit"]:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus {
-	background: #415975; /* Old browsers */
-	background: -webkit-linear-gradient(top, #68727e 0%, #415975 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #68727e 0%, #415975 100%); /* W3C */
+	background: hsla(212, 29%, 46%, 1)  ; /* Old browsers */
+	background: -webkit-linear-gradient(top, hsla(213, 50%, 45%, 1)  0%, hsla(212, 29%, 46%, 1)   100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, hsla(213, 50%, 45%, 1)  0%, hsla(212, 29%, 46%, 1)   100%); /* W3C */
 	outline: none;
 }
 
@@ -622,11 +622,11 @@ button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	background: #68727e; /* Old browsers */
-	background: -webkit-linear-gradient(top, #68727e 0%, #415975 100%); /* Chrome 10+, Safari 5.1+ */
-	background:   linear-gradient(to bottom, #68727e 0%, #415975 100%); /* W3C */
+	background: hsla(213, 50%, 45%, 1) ; /* Old browsers */
+	background: -webkit-linear-gradient(top, hsla(213, 50%, 45%, 1)  0%, hsla(212, 29%, 46%, 1)   100%); /* Chrome 10+, Safari 5.1+ */
+	background:   linear-gradient(to bottom, hsla(213, 50%, 45%, 1)  0%, hsla(212, 29%, 46%, 1)   100%); /* W3C */
 	border: none;
-	border-top: 3px solid #68727e;
+	border-top: 3px solid hsla(213, 50%, 45%, 1) ;
 	padding: 10px 24px 11px;
 }
 
@@ -1030,7 +1030,7 @@ ul.nav-menu li:hover > ul,
 }
 
 .entry-title a {
-	color: #141412;
+	color: hsla(60, 5%, 7%, 1); /* Black Velvet */
 }
 
 .entry-title a:hover {
@@ -1127,7 +1127,7 @@ ul.nav-menu li:hover > ul,
 
 .entry-content a,
 .comment-content a {
-	color: #415975;
+	color: hsla(212, 29%, 46%, 1)  ;
 }
 
 .entry-content a:hover,
@@ -1537,7 +1537,7 @@ footer.entry-meta {
 }
 
 .format-link .entry-title a {
-	color: #415975;
+	color: hsla(212, 29%, 46%, 1)  ;
 }
 
 .format-link div.entry-meta {
@@ -1856,7 +1856,7 @@ footer.entry-meta {
 }
 
 .navigation a {
-	color: #415975;
+	color: hsla(212, 29%, 46%, 1)  ;
 }
 
 .navigation a:hover {
@@ -2171,7 +2171,7 @@ footer.entry-meta {
 .comment-author .url,
 .comment-reply-link,
 .comment-reply-login {
-	color: #415975;
+	color: hsla(212, 29%, 46%, 1)  ;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: normal;
@@ -2847,14 +2847,14 @@ footer.entry-meta {
 	}
 
 	.toggled-on .nav-menu li > ul a {
-		color: #141412;
+		color: hsla(60, 5%, 7%, 1); /* Black Velvet */
 		width: auto;
 	}
 
 	.toggled-on .nav-menu li:hover > a,
 	.toggled-on .nav-menu .children a {
 		background-color: transparent;
-		color: #141412;
+		color: hsla(60, 5%, 7%, 1); /* Black Velvet */
 	}
 
 	.toggled-on .nav-menu li a:hover,
@@ -3099,7 +3099,7 @@ footer.entry-meta {
 
 	.entry-meta,
 	.entry-meta a {
-		color: #415975;
+		color: hsla(212, 29%, 46%, 1)  ;
 		font-size: 10pt;
 	}
 
@@ -3158,7 +3158,7 @@ footer.entry-meta {
 /*
 This interfered with jQuery filter
 #mz_mbo_schedule tbody tr:nth-child(even) td {
-    background: rgb(252, 242, 118) none repeat scroll 0% 0% / auto padding-box border-box;
+    background: hsla(56, 96%, 73%, 1) none repeat scroll 0% 0% / auto padding-box border-box;
     }
 #mz_mbo_schedule tbody tr:nth-child(odd) td { 
     background: rgb(219, 199, 172) none repeat scroll 0% 0% / auto padding-box border-box;   
@@ -3191,7 +3191,7 @@ This interfered with jQuery filter
 
 .btn {
 color: #444;
-background: rgb(252, 242, 118) none repeat scroll 0% 0% / auto padding-box border-box;
+background: hsla(56, 96%, 73%, 1) none repeat scroll 0% 0% / auto padding-box border-box;
 }
 .btn:hover, .btn:focus {
 color: #fff;
@@ -3213,6 +3213,56 @@ mz_mindbody_events_header {margin-bottom:.1em;}
 .entry-header .entry-thumbnail img { 
 	float: right; margin-top: 24px; margin-left: .5em; border: 2px solid rgba(125, 125, 153, 0.7); 
 	}
+	
+.btn, .btn-info{
+	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, hsla(213, 50%, 45%, 1)  0%, hsla(212, 29%, 46%, 1)   100%) repeat scroll 0 0 !important;
+	border-color: -moz-use-text-color -moz-use-text-color hsla(212, 29%, 46%, 1)   !important;
+	border-image: none !important;
+	border-radius: 2px !important;
+	border-style: none none solid !important;
+	border-width: medium medium 3px !important;
+	color: #fff !important;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 12px !important;
+}
+
+.btn:hover, .btn-info:hover {
+	color: white !important;
+	box-shadow: .5px .5px .8px hsla(0, 0%, 60%, 0.8);
+}
+
+.mz_cancelled_class {
+	background-color: red;
+	color: white;
+	padding: 0 .6rem;
+	line-height: 14px;
+	margin:-20px 0 0 0px; 
+	z-index:2;
+	position:absolute;
+	text-align: center
+	/** ROTATE
+	
+	/* Safari */
+	-webkit-transform: rotate(-25deg);
+
+	/* Firefox */
+	-moz-transform: rotate(-25deg);
+
+	/* IE */
+	-ms-transform: rotate(-25deg);
+
+	/* Opera */
+	-o-transform: rotate(-25deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+
+}
+
+tr.striped {
+	background-color: hsla(56, 96%, 91%, 1) !important;
+}
 
 /**
 * 10.2 - MZ MBO Staff Display
