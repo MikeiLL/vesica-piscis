@@ -941,7 +941,7 @@ ul.nav-menu li:hover > ul,
 
 /* Navbar */
 .navbar {
-    background-color: #fed583;
+    background-color: hsla(40, 98%, 75%, 1);
 	margin: 0 auto;
 	max-width: 1600px;
 	width: 100%;
@@ -3263,6 +3263,10 @@ mz_mindbody_events_header {margin-bottom:.1em;}
 tr.striped {
 	background-color: hsla(56, 96%, 91%, 1) !important;
 }
+
+tr.header th {
+ 	background-color: hsla(40, 98%, 75%, 1) !important;
+ }
 
 /**
 * 10.2 - MZ MBO Staff Display
