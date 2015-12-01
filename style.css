@@ -3264,18 +3264,21 @@ mz_mindbody_events_header {margin-bottom:.1em;}
 	border: 1px solid hsla(212, 29%, 46%, 1);
 }
 
+.mz-schedule-filter th {
+	border: 1px solid hsla(12, 8%, 75%, .8);
+}
 
 tr.striped {
 	background-color: hsla(56, 96%, 91%, 1) !important;
 }
 
-tr.header th {
+tr.header th, tr.striped th {
  	background-color: hsla(40, 98%, 75%, 1) !important;
- 	border: none;
+ 	border: 1px solid hsla(12, 8%, 75%, .8);
  }
 
 .mz-schedule-filter td {
-	border: none;
+	border: 1px solid hsla(12, 8%, 75%, .8);
 }
 
 /**
