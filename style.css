@@ -3277,42 +3277,42 @@ tr.header th, tr.striped th {
  	border: 1px solid hsla(12, 8%, 75%, .8);
  }
 
-.mz-schedule-filter td {
+.mz-schedule-grid td {
 	border: 1px solid hsla(12, 8%, 75%, .8);
 }
 
 /* Styling for grid display to work on small devices. */
-.mz-schedule-filter, .mz-schedule-filter th {
+.mz-schedule-grid, .mz-schedule-grid th {
 	line-height: .3rem;
 	font-size: .3rem;
 	font-weight: 300;
 }
 
-.mz-schedule-filter btn, .mz_add_to_class, .fa, .fa-sign-in {
+.mz-schedule-grid btn, .mz-schedule-grid .mz_add_to_class, .mz-schedule-grid .fa {
 	padding: 1px 2px !important;
 }
 
-.mz_schedule_table a {
+.mz-schedule-grid a {
 	line-height: .5rem;
 	font-size: .5rem;
 }
 
 @media (min-width: 767px) {
-	.mz-schedule-filter, .mz-schedule-filter th{
+	.mz-schedule-grid, .mz-schedule-grid th{
 		line-height: 1rem;
 		font-size: 1rem;
 		font-weight: 400;
 	}
 	
-	.mz-schedule-filter th {
+	.mz-schedule-grid th {
 		font-weight: 600;
 	}
 
-	.mz-schedule-filter btn, .mz_add_to_class, .fa, .fa-sign-in {
+	.mz-schedule-grid btn, .mz-schedule-grid .mz_add_to_class, .mz-schedule-grid .fa {
 		padding: 6px 12px !important;
 	}
 
-	.mz_schedule_table a {
+	.mz-schedule-grid a {
 		line-height: 1.2rem;
 		font-size: 1.2rem;
 	}
