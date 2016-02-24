@@ -3390,6 +3390,7 @@ Template Name: Page Of Posts Two Columns
 
 #welcome p:last-of-type {
 				background: hsla(240, 12%, 55%, 0.7);
+				font-weight: 600;
 				}
 					
 @media all and (min-width: 900px) {
