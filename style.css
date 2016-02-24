@@ -35,6 +35,8 @@ Template:       twentythirteen
  * 8.0 - Media Queries
  * 9.0 - Print
  * 10.0 - Mindbody Online Stylization
+ * 11 - Text Columns
+ * 12 - Misc
  * ----------------------------------------------------------------------------
  */
 
@@ -3155,34 +3157,6 @@ footer.entry-meta {
 * ----------------------------------------------------------------------------
 */
 
-/*
-This interfered with jQuery filter
-#mz_mbo_schedule tbody tr:nth-child(even) td {
-    background: hsla(56, 96%, 73%, 1) none repeat scroll 0% 0% / auto padding-box border-box;
-    }
-#mz_mbo_schedule tbody tr:nth-child(odd) td { 
-    background: rgb(219, 199, 172) none repeat scroll 0% 0% / auto padding-box border-box;   
-}
-
-#mz_mbo_schedule thead tr th {
-        background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;   
-}*/
-
-/*Start Responsive two column*/
-.columnsContainer { position: relative; margin: .5em; }
-
-.leftColumn, .rightColumn {  padding: 1.25em; }
-
-.leftColumn { margin-bottom: .5em; }
-
-/* MEDIA QUERIES */
-@media screen and (min-width: 47.5em ) {
-  .leftColumn { margin-right: 50%; }
-
-	.rightColumn { position: absolute; top: 0; right: 0; width: 50%; }   
-}
-
-/*End Responsive two column*/
 
 .mz_mbo_schedule  {
     margin-left:0px;
@@ -3348,6 +3322,10 @@ tr.header th, tr.striped th {
 	margin: 1rem;
 }
 
+/**
+* 11 - Text Columns
+* ----------------------------------------------------------------------------
+*/
 
 @media (max-width: 767px) {
 /*
@@ -3355,4 +3333,52 @@ Template Name: Page Of Posts Two Columns
 */
     .vp_col1 {  max-width: 100%!important; float: none; }
     .vp_col2 {  max-width: 100%!important; float: none; padding: 5px; }
+}
+
+
+/* Start Responsive two column*/
+.columnsContainer { position: relative; margin: .5em; }
+
+.leftColumn, .rightColumn {  padding: 1.25em; }
+
+.leftColumn { margin-bottom: .5em; }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .leftColumn { margin-right: 50%; }
+
+	.rightColumn { position: absolute; top: 0; right: 0; width: 50%; }   
+}
+
+/* End Responsive two column*/
+
+/* Start Responsive paragraphs */
+
+@media all and (min-width: 900px) {
+#example p:first-of-type  {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 3%; /* Saf3, Chrome*/
+  -moz-column-count: 2;   
+  -moz-column-gap: 3%; /* FF3.5+ */
+  column-count: 2;        
+  column-gap: 3%; /* Opera 11+*/
+  }
+   #example p  {
+  -webkit-column-count: 3;
+  -webkit-column-gap: 1%; /* Saf3, Chrome*/
+  -moz-column-count: 3;   
+  -moz-column-gap: 1%; /* FF3.5+ */
+  column-count: 3;        
+  column-gap: 1%; /* Opera 11+*/
+  }
+}
+/* End Responsive paragraphs */
+
+/**
+* 12 - Misc
+* ----------------------------------------------------------------------------
+*/
+.site-description {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: inherit;
 }
