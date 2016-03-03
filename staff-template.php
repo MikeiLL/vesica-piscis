@@ -20,7 +20,7 @@ get_header(); ?>
 						</div>
 						<?php endif; ?>
 
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+						<h1 class="entry-title vp-full-size"><?php the_title(); ?></h1>
 					</header><!-- .entry-header -->
 
 					<div class="not-entry-content">
@@ -39,5 +39,4 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

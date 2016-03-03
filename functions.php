@@ -15,7 +15,7 @@ function add_vesica_piscis_styles() {
 add_action( 'wp_enqueue_scripts', 'add_vesica_piscis_styles' );
 
 function add_test_scripts() {
-	wp_enqueue_script('see_me', get_stylesheet_directory_uri() . '/js/seeme.js', array('jquery'), null, true);
+	wp_enqueue_script('see_me', get_stylesheet_directory_uri() . '/js/add_schedule_button.js', array('jquery'), null, true);
 	}
 //add_action( 'wp_enqueue_scripts', 'add_test_scripts' );
 

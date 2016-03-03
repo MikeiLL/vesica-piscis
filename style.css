@@ -3257,7 +3257,7 @@ mz_mindbody_events_header {margin-bottom:.1em;}
 }
 
 .mz-schedule-filter {
-	border: 1px solid hsla(212, 29%, 46%, 1);
+	border: none; /*1px solid hsla(212, 29%, 46%, 1);*/
 }
 
 .mz-schedule-filter th {
@@ -3335,26 +3335,40 @@ tr.header th, tr.striped th {
 
 /* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
 /* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
-/* From http://codepen.io/ericrasch/pen/zjDBx */
+/* Some suggestions from http://codepen.io/ericrasch/pen/zjDBx */
 .mz_mbo_styled_select {
-   width: 240px;
-   height: 34px;
-   overflow: hidden;
-   border: 1px solid #ccc;
-   background: hsla(40, 98%, 75%, 1);
-   float: right;
+    background: hsla(40, 98%, 75%, 0) none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    height: 2rem;
+    margin-bottom: -0.8rem;
+    margin-left: 1rem;
+    overflow: hidden;
 }
 
 .mz_mbo_styled_select select {
    background: transparent;
-   width: 268px;
-   padding: 5px;
-   font-size: 16px;
+   padding: 2px;
+   font-size: .9rem;
    line-height: 1;
-   border: 0;
-   border-radius: 0;
-   height: 34px;
+   border: 0;;
+   height: 2rem;
    -webkit-appearance: none;
+   color: hsla(212, 29%, 46%, 1);
+   font-family: Century Gothic, Helvetica, sans-serif;
+}
+
+.layout-button {
+	margin-bottom: -3rem !important;
+	float:right;
+	border:1px solid red !important;
+}
+
+.vp-full-size {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	height: auto;
+	padding-right: 1em !important;
 }
 
 /**
