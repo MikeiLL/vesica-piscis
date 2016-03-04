@@ -3279,19 +3279,30 @@ tr.header th, tr.striped th {
 }
 
 /* Styling for grid display to work on small devices. */
-.mz-schedule-grid, .mz-schedule-grid th {
+	
+.mz-schedule-grid, .mz-schedule-grid th, .mz-schedule-grid td a {
 	line-height: .3rem;
 	font-size: .3rem;
 	font-weight: 300;
 }
 
 .mz-schedule-grid th {
+	hsla(40, 98%, 75%, 1) !important
 	text-overflow: ellipsis-word;
 	max-width: 20px;
 	font-size: .8rem;  
 	/* Required for text-overflow to do anything */
   white-space: nowrap;
   overflow: hidden;
+}
+
+.mz-schedule-horizontal tr.header th, .mz-schedule-horizontal td {
+	hsla(40, 98%, 75%, 1) !important;
+	font-size: .7rem;  
+}
+
+.mz-schedule-horizontal td {
+	font-size: .8rem;  
 }
 
 .mz-schedule-grid btn, .mz-schedule-grid .mz_add_to_class, .mz-schedule-grid .fa {
@@ -3306,12 +3317,79 @@ tr.header th, tr.striped th {
 .mz-staffImage {
 	display: none;
 	}
+	
+	.mz-schedule-grid td:nth-child(2) { 
+		font-size:.7rem; 
+		line-height: 1rem;
+		font-weight: 600; 
+	}
+
+	.filter-table, .mz_mbo_selector {
+		font-size: .8rem;
+	}
+		
+@media (max-width: 640px) {
+	.mz-schedule-grid .mz_description_holder:hover, .mz-schedule-grid .mz_description_holder:hover a {
+		font-size: .7rem;
+		line-height: 1rem;
+		cursor: -moz-zoom-in; 
+		cursor: -webkit-zoom-in; 
+		cursor: zoom-in;
+	}
+}
 
 @media (min-width: 767px) {
-	.mz-schedule-grid, .mz-schedule-grid th{
+
+	.filter-table {
+		font-size: .8rem;
+	}
+	
+	.mz-schedule-grid td:nth-child(2) { 
+		font-size:.8rem; 
+		font-weight: 600; 
+	}
+
+	.mz-schedule-grid th:first-child { max-width:40px; }
+	
+	.mz-schedule-grid, .mz-schedule-grid th, .mz-schedule-grid td a {
 		line-height: 1rem;
+		font-size: .7rem;
+	}
+	
+	.mz-schedule-grid th {
+		font-weight: 600;
+	}
+
+	.mz-schedule-grid btn, .mz-schedule-grid .mz_add_to_class, .mz-schedule-grid .fa {
+		padding: 6px 12px !important;
+	}
+
+	.mz-schedule-grid a {
+		line-height: 1.2rem;
+		font-size: 1.2rem;
+	}
+	
+	.mz-schedule-grid td {
+	border: 1px solid hsla(12, 8%, 75%, .8);
+	padding: 4px;
+	}
+	
+@media (min-width: 980px) {
+
+	.filter-table {
 		font-size: 1rem;
-		font-weight: 400;
+	}
+	
+	.mz-schedule-grid td:nth-child(2) { 
+		font-size: 1rem; 
+		font-weight: 400; 
+	}
+
+	.mz-schedule-grid th:first-child { max-width:40px; }
+	
+	.mz-schedule-grid, .mz-schedule-horizontal td, .mz-schedule-grid th, .mz-schedule-grid td a {
+		line-height: 1.2rem;
+		font-size: 1rem;
 	}
 	
 	.mz-schedule-grid th {
@@ -3364,11 +3442,13 @@ tr.header th, tr.striped th {
 	border:1px solid red !important;
 }
 
-.vp-full-size {
+/* For Full Width Template */
+.full-width-entry-content, .mz-schedule-grid {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	height: auto;
 	padding-right: 1em !important;
+	max-width: 95%;
 }
 
 /**
