@@ -3443,12 +3443,23 @@ tr.header th, tr.striped th {
 }
 
 /* For Full Width Template */
-.full-width-entry-content, .mz-schedule-grid {
+.full-width-entry-content, .mz-schedule-grid, .full-width-entry-header {
 	margin-left: auto !important;
 	margin-right: auto !important;
 	height: auto;
 	padding-right: 1em !important;
 	max-width: 95%;
+}
+
+.full-width-entry-header h1 {
+	font-size: 1.2rem;
+	font-family: monotype;
+	text-align: center;
+}
+
+.staff-template-entry-header {
+	font-size: 1.8rem;
+	text-align: center;
 }
 
 /**
