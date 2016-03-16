@@ -16,7 +16,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', get_post_format() ); ?>
-				<?php twentythirteen_post_nav(); ?>
+				<?php //twentythirteen_post_nav(); ?>
 				
 				<?php if (is_singular( 'yoga-event' )): ?>
 					<nav class="navigation paging-navigation" role="navigation">
