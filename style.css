@@ -3487,6 +3487,14 @@ tr.header th, tr.striped th {
    	margin-top: 1rem;
 	}
 }
+
+#schedule_listing {
+	max-width: 500px;
+	float:right;
+}
+#schedule_listing .header {
+	display: none;
+}
 /**
 * 11 - Text Columns
 * ----------------------------------------------------------------------------
