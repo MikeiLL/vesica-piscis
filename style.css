@@ -3491,10 +3491,14 @@ tr.header th, tr.striped th {
 #schedule_listing {
 	max-width: 500px;
 	float:right;
+	font-size: 1.1rem;
 }
+
 #schedule_listing .header {
 	display: none;
 }
+
+
 /**
 * 11 - Text Columns
 * ----------------------------------------------------------------------------
