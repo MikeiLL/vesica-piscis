@@ -155,7 +155,7 @@ add_filter('language_attributes', 'add_opengraph_doctype');
 function insert_fb_in_head() {
 	global $post;
         setup_postdata($post);
-        $default_image=get_stylesheet_directory_uri() . " "; 
+        $default_image=get_stylesheet_directory_uri() . "/seed-of-life.png"; 
 	if ( !is_singular()) //if it is not a post or a page
 		{
 		if (is_category())
@@ -176,6 +176,7 @@ function insert_fb_in_head() {
         echo '<meta property="og:site_name" content="URU Yoga &amp; Beyond"/>';
         $the_excerpt = get_post($post->ID);
         $an_excerpt = wp_trim_words($the_excerpt->post_content);
+        $caption_free_excerpt = preg_replace("/(<p>|<div .*>)(\s*)(<a .*>)?(\s*)(<img .* \/>)(\s*)(<\/a>)?(\s*)(<p .*>.*<\/p>)?(\s*)(<\/p>|<\/div>)/", "", $an_excerpt);
         $og_excerpt = isset($an_excerpt) ? $an_excerpt : bloginfo('description');
         echo '<meta property="og:description" content="'.$og_excerpt.'"/>';
 			if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
