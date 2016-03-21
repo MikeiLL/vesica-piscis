@@ -3498,6 +3498,10 @@ tr.header th, tr.striped th {
 	display: none;
 }
 
+#mz-mbo-pages > p {
+	margin-top:1rem;
+}
+
 
 /**
 * 11 - Text Columns
