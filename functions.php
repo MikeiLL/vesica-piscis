@@ -177,7 +177,7 @@ function insert_fb_in_head() {
         $the_excerpt = get_post($post->ID);
         $an_excerpt = wp_trim_words($the_excerpt->post_content);
         $caption_free_excerpt = preg_replace("/(<p>|<div .*>)(\s*)(<a .*>)?(\s*)(<img .* \/>)(\s*)(<\/a>)?(\s*)(<p .*>.*<\/p>)?(\s*)(<\/p>|<\/div>)/", "", $an_excerpt);
-        $og_excerpt = isset($an_excerpt) ? $an_excerpt : bloginfo('description');
+        $og_excerpt = isset($caption_free_excerpt) ? $caption_free_excerpt : bloginfo('description');
         echo '<meta property="og:description" content="'.$og_excerpt.'"/>';
 			if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
 				echo '<meta property="og:image" content="' . $default_image . '"/>';
