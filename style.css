@@ -3317,7 +3317,7 @@ tr.header th, tr.striped th {
 .mz-staffImage {
 	display: none;
 	}
-	
+		
 	.mz-schedule-grid td:nth-child(2) { 
 		font-size:.7rem; 
 		line-height: 1rem;
@@ -3452,6 +3452,20 @@ tr.header th, tr.striped th {
 }
 
 .full-width-entry-header h1 {
+	font-size: 1.2rem;
+	font-family: monotype;
+	text-align: center;
+}
+
+.medium-width-entry-content, .medium-width-entry-header {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	height: auto;
+	padding-right: 1em !important;
+	max-width: 85%;
+}
+
+.medium-width-entry-header h1 {
 	font-size: 1.2rem;
 	font-family: monotype;
 	text-align: center;
